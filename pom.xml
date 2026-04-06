@@ -9,8 +9,8 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>org.java.example</groupId>
-    <packaging>war</packaging>
     <artifactId>SpringbootEndToEndApp</artifactId>
+    <packaging>war</packaging>
     <version>0.0.1-SNAPSHOT</version>
     <name>SpringbootEndToEndApp</name>
     <description>SpringbootEndToEndApp</description>

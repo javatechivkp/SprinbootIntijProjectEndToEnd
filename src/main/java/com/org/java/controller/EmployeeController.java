@@ -2,10 +2,8 @@ package com.org.java.controller;
 
 import com.org.java.dto.EmployeeDto;
 import com.org.java.entity.Employee;
-import com.org.java.mapper.EmployeeMapper;
 import com.org.java.service.EmployeeService;
-import com.org.java.util.PdfGenerator;
-import designpatteran.SingletonDesignPattarean;
+import com.org.java.designpatteran.SingletonDesignPattarean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpHeaders;
