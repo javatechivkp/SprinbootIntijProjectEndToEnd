@@ -14,7 +14,7 @@ spring:
     host: smtp.gmail.com   # or smtp.office365.com
     port: 587
     username: srinuvasrao966@gmail.com
-    password: tccl vnxy jwsv ayhf  # Use Gmail App Password, not regular password
+    password: tccl vnxy jwsv ayhf
     properties:
       mail:
         smtp:
