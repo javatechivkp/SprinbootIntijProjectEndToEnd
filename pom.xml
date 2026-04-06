@@ -100,7 +100,7 @@
     </dependencies>
 
     <build>
-        <finalName>springboot-endtoend-IJtest</finalName>
+        <finalName>springboot-endtoend-ijtest</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
