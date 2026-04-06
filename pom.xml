@@ -10,7 +10,6 @@
     </parent>
     <groupId>org.java.example</groupId>
     <artifactId>SpringbootEndToEndApp</artifactId>
-    <packaging>jar</packaging>
     <version>0.0.1-SNAPSHOT</version>
     <name>SpringbootEndToEndApp</name>
     <description>SpringbootEndToEndApp</description>
@@ -100,7 +99,7 @@
     </dependencies>
 
     <build>
-        <finalName>springboot-endtoend-ijtest</finalName>
+        <finalName>springboot-endtoend-ijtestlatest</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
