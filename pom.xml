@@ -9,6 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>org.java.example</groupId>
+    <packaging>war</packaging>
     <artifactId>SpringbootEndToEndApp</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>SpringbootEndToEndApp</name>
@@ -99,6 +100,7 @@
     </dependencies>
 
     <build>
+        <finalName>springboot-endtoend</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
