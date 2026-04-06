@@ -1,0 +1,62 @@
+1. create table Person(id int primary key not null,name vachar(50) not null,int age not null)
+
+2.insert into Person(id,name,age) values(1,'srinu',30);
+
+3.update Person set name='surersh',age=38,where id=1;
+
+4.delete from Person where id=1;
+
+5.select * from Person;
+
+6.alter table Person add address;
+
+7.alter table Person drop address;
+
+8 select p.name from Person p;
+
+9 joins 3 tables
+==========
+
+CREATE TABLE Person(
+personId INT PRIMARY KEY,
+personName varchar(100),
+gender varchar(50));
+
+CREATE TABLE Adhar (
+    adharid INT PRIMARY KEY,
+     adharNumber int,
+    cardtype varchar(50),
+    personId INT,
+    FOREIGN KEY (personId) REFERENCES Person(personId)
+);
+
+CREATE TABLE Address (
+    addresId INT PRIMARY KEY,
+    country varchar(50),
+    state varchar(50),
+	district varchar(50),
+    pincode int,
+    adharid INT,
+    FOREIGN KEY (adharid) REFERENCES Adhar(adharid)
+);
+
+SELECT * FROM PERSON;
+SELECT * FROM ADHAR;
+SELECT * FROM ADDRESS;
+
+Select * From Person p join Adhar adr on p.personId=adr.personId;
+
+Select p.personName,adr.cardtype From Person p join Adhar adr on p.personId=adr.personId;
+
+two table
+========
+Select p.personName,p.gender,adr.adharNumber From Person p  join Adhar adr on p.personId=adr.personId;
+
+
+three table
+===========
+Select * From Person p  join Adhar adr on p.personId=adr.personId inner join Address ad on adr.adharid=ad.adharid
+
+require column on 3 tables
+===========================
+Select p.personName,adr.cardtype,ad.state,ad.pincode,ad.district,adr.adharnumber From Person p  join Adhar adr on p.personId=adr.personId inner join Address ad on adr.adharid=ad.adharid;
