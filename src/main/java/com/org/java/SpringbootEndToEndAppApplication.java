@@ -12,7 +12,6 @@ public class SpringbootEndToEndAppApplication extends SpringBootServletInitializ
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
         return application.sources(SpringbootEndToEndAppApplication.class);
     }
-
     public static void main(String[] args) {
         SpringApplication.run(SpringbootEndToEndAppApplication.class, args);
 
