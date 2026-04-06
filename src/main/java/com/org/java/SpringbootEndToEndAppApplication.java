@@ -16,5 +16,4 @@ public class SpringbootEndToEndAppApplication extends SpringBootServletInitializ
         SpringApplication.run(SpringbootEndToEndAppApplication.class, args);
 
     }
-
 }
