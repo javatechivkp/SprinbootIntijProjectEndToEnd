@@ -21,5 +21,4 @@ public class EmployeeDto {
     private Long addharNumber;
     private String panNumber;
     private Long mobbileNumber;
-
 }
