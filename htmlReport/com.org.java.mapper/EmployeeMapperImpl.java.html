@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>EmployeeMapperImpl.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">All in SpringbootEndToEndApp (1) Coverage Results, All in SpringbootEndToEndApp (3) Coverage Results</a> &gt; <a href="index.source.html" class="el_package">com.org.java.mapper</a> &gt; <span class="el_source">EmployeeMapperImpl.java</span></div><h1>EmployeeMapperImpl.java</h1><pre class="source lang-java linenums">package com.org.java.mapper;
+
+import com.org.java.dto.EmployeeDto;
+import com.org.java.entity.Employee;
+import javax.annotation.processing.Generated;
+import org.springframework.stereotype.Component;
+
+@Generated(
+    value = &quot;org.mapstruct.ap.MappingProcessor&quot;,
+    date = &quot;2026-03-16T13:24:32+0530&quot;,
+    comments = &quot;version: 1.5.5.Final, compiler: javac, environment: Java 21.0.10 (Oracle Corporation)&quot;
+)
+@Component
+<span class="fc" id="L14">public class EmployeeMapperImpl implements EmployeeMapper {</span>
+
+    @Override
+    public EmployeeDto mapToEmployeetoEmployeeDTO(Employee employee) {
+<span class="nc bnc" id="L18" title="All 2 branches missed.">        if ( employee == null ) {</span>
+<span class="nc" id="L19">            return null;</span>
+        }
+
+<span class="nc" id="L22">        EmployeeDto employeeDto = new EmployeeDto();</span>
+
+<span class="nc" id="L24">        employeeDto.setEmpid( employee.getEmpid() );</span>
+<span class="nc" id="L25">        employeeDto.setName( employee.getName() );</span>
+<span class="nc" id="L26">        employeeDto.setAge( employee.getAge() );</span>
+<span class="nc" id="L27">        employeeDto.setSalary( employee.getSalary() );</span>
+<span class="nc" id="L28">        employeeDto.setEmail( employee.getEmail() );</span>
+<span class="nc" id="L29">        employeeDto.setWorkLocation( employee.getWorkLocation() );</span>
+<span class="nc" id="L30">        employeeDto.setPlatform( employee.getPlatform() );</span>
+<span class="nc" id="L31">        employeeDto.setProjectName( employee.getProjectName() );</span>
+<span class="nc" id="L32">        employeeDto.setAddharNumber( employee.getAddharNumber() );</span>
+<span class="nc" id="L33">        employeeDto.setPanNumber( employee.getPanNumber() );</span>
+<span class="nc" id="L34">        employeeDto.setMobbileNumber( employee.getMobbileNumber() );</span>
+
+<span class="nc" id="L36">        return employeeDto;</span>
+    }
+
+    @Override
+    public Employee mapToEmployeeDtotoEmployee(EmployeeDto employeeDto) {
+<span class="nc bnc" id="L41" title="All 2 branches missed.">        if ( employeeDto == null ) {</span>
+<span class="nc" id="L42">            return null;</span>
+        }
+
+<span class="nc" id="L45">        Employee employee = new Employee();</span>
+
+<span class="nc" id="L47">        employee.setEmpid( employeeDto.getEmpid() );</span>
+<span class="nc" id="L48">        employee.setName( employeeDto.getName() );</span>
+<span class="nc" id="L49">        employee.setAge( employeeDto.getAge() );</span>
+<span class="nc" id="L50">        employee.setSalary( employeeDto.getSalary() );</span>
+<span class="nc" id="L51">        employee.setEmail( employeeDto.getEmail() );</span>
+<span class="nc" id="L52">        employee.setWorkLocation( employeeDto.getWorkLocation() );</span>
+<span class="nc" id="L53">        employee.setPlatform( employeeDto.getPlatform() );</span>
+<span class="nc" id="L54">        employee.setProjectName( employeeDto.getProjectName() );</span>
+<span class="nc" id="L55">        employee.setAddharNumber( employeeDto.getAddharNumber() );</span>
+<span class="nc" id="L56">        employee.setPanNumber( employeeDto.getPanNumber() );</span>
+<span class="nc" id="L57">        employee.setMobbileNumber( employeeDto.getMobbileNumber() );</span>
+
+<span class="nc" id="L59">        return employee;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.14.202510111229</span></div></body></html>
