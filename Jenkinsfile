@@ -10,7 +10,7 @@ pipeline {
         stage('Build docker image'){
             steps{
                 script{
-                    bat 'docker build --no-cache -t thrishank99/springbootexample-test:latest .'
+                    bat 'docker build --no-cache -t thrishank99/springbootexample-ijtest:latest .'
                 }
             }
         
@@ -22,7 +22,7 @@ pipeline {
                    withCredentials([usernamePassword(credentialsId: 'javatechidockerpwd', passwordVariable: 'javatechidockerpwd', usernameVariable: 'thrishank99')]) {
                    bat "docker login -u ${env.thrishank99} -p ${env.javatechidockerpwd}"
 }
-                  bat 'docker push thrishank99/springbootexample-test'
+                  bat 'docker push thrishank99/springbootexample-ijtest'
                 }
             }
         }

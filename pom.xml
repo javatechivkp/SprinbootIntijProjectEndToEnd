@@ -99,7 +99,7 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>springbootexample-test</finalName>
+        <finalName>springbootexample-ijtest</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
