@@ -22,7 +22,7 @@ pipeline {
                    withCredentials([usernamePassword(credentialsId: 'javatechidockerpwd', passwordVariable: 'javatechidockerpwd', usernameVariable: 'thrishank99')]) {
                    bat "docker login -u ${env.thrishank99} -p ${env.javatechidockerpwd}"
 }
-                  bat 'docker push thrishank99/springapp:latest .'
+                  bat 'docker push thrishank99/springapp:latest'
                 }
             }
         }
