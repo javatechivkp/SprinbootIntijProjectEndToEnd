@@ -13,7 +13,6 @@ pipeline {
                     bat 'docker build --no-cache -t thrishank99/springbootexample-ijtest:latest .'
                 }
             }
-        
         }
        stage('Push image to Hub'){
             steps{
