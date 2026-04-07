@@ -98,9 +98,8 @@
             <artifactId>spring-boot-starter-mail</artifactId>
         </dependency>
     </dependencies>
-
     <build>
-        <finalName>app</finalName>
+        <finalName>springbootexample-app</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
