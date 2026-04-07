@@ -10,7 +10,7 @@ pipeline {
         stage('Build docker image'){
             steps{
                 script{
-                    bat 'docker build -t thrishank99/springrealtime-ij-app .'
+                    bat 'docker build -t thrishank99/springrealtime-test .'
                 }
             }
         
@@ -22,7 +22,7 @@ pipeline {
                    withCredentials([usernamePassword(credentialsId: 'javatechidockerpwd', passwordVariable: 'javatechidockerpwd', usernameVariable: 'thrishank99')]) {
                    bat "docker login -u ${env.thrishank99} -p ${env.javatechidockerpwd}"
 }
-                  bat 'docker push thrishank99/springrealtime-ij-app'
+                  bat 'docker push thrishank99/springrealtime-test'
                 }
             }
         }
