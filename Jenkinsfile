@@ -10,7 +10,7 @@ pipeline {
         stage('Build docker image'){
             steps{
                 script{
-                    bat 'docker build -t thrishank99/realtime-ij-app .'
+                    bat 'docker build -t thrishank99/springrealtime-ij-app .'
                 }
             }
         
@@ -22,16 +22,9 @@ pipeline {
                    withCredentials([usernamePassword(credentialsId: 'javatechidockerpwd', passwordVariable: 'javatechidockerpwd', usernameVariable: 'thrishank99')]) {
                    bat "docker login -u ${env.thrishank99} -p ${env.javatechidockerpwd}"
 }
-                  bat 'docker push thrishank99/realtime-ij-app'
+                  bat 'docker push thrishank99/springrealtime-ij-app'
                 }
             }
         }
-        stage('build & SonarQube Analysis'){
-            steps{
-              withSonarQubeEnv('Sonarqubescanner'){
-              bat 'mvn clean package sonar:sonar'
-            }
-}
-        }     
    }
 }
