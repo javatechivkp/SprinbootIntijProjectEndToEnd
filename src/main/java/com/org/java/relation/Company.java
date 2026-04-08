@@ -24,5 +24,5 @@ public class Company {
     @OneToMany(targetEntity = Project.class,cascade = CascadeType.ALL)
     @JoinColumn(name = "cm_pk",referencedColumnName = "companyId")
     private List<Project> projects;
-    
+
 }
