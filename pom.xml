@@ -10,7 +10,7 @@
     </parent>
     <groupId>org.java.example</groupId>
     <artifactId>SpringbootEndToEndApp</artifactId>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <version>0.0.1-SNAPSHOT</version>
     <name>SpringbootEndToEndApp</name>
     <description>SpringbootEndToEndApp</description>
@@ -98,9 +98,8 @@
             <artifactId>spring-boot-starter-mail</artifactId>
         </dependency>
     </dependencies>
-
     <build>
-        <finalName>app</finalName>
+        <finalName>springbootexample-ijtest</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

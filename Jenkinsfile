@@ -3,17 +3,16 @@ pipeline {
     stages{
         stage('Build Maven'){
             steps{
-                checkout([$class: 'GitSCM', branches: [[name: 'master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/javatechivkp/Springbootrealtime2026Application.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: 'master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/javatechivkp/SprinbootIntijProjectEndToEnd.git']]])
                 bat 'mvn clean install'
             }
         }
         stage('Build docker image'){
             steps{
                 script{
-                    bat 'docker build --no-cache -t thrishank99/springapp:latest .'
+                    bat 'docker build --no-cache -t thrishank99/springbootexample-ijtest:latest .'
                 }
             }
-        
         }
        stage('Push image to Hub'){
             steps{
@@ -22,7 +21,7 @@ pipeline {
                    withCredentials([usernamePassword(credentialsId: 'javatechidockerpwd', passwordVariable: 'javatechidockerpwd', usernameVariable: 'thrishank99')]) {
                    bat "docker login -u ${env.thrishank99} -p ${env.javatechidockerpwd}"
 }
-                  bat 'docker push thrishank99/springapp:latest'
+                  bat 'docker push thrishank99/springbootexample-ijtest'
                 }
             }
         }
